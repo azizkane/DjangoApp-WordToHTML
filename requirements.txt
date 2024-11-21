@@ -1,0 +1,18 @@
+# django set up
+Django==4.1.0                   # Framework web Python pour le développement rapide et propre
+djangorestframework>=3.12.0     # Extension Django pour créer des API REST
+pytest>=6.0.0                  # Framework de test pour Python
+pytest-django>=4.0.0           # Plugin pytest pour tester les applications Django
+django-filter>=2.4.0           # Permet de filtrer facilement les querysets Django
+six>=1.15.0                   # Utilitaires de compatibilité Python 2 et 3
+pandas>=1.1.0                 # Bibliothèque d'analyse de données
+django-cors-headers>=4.5.0    # Gestion des en-têtes CORS pour Django
+python_dotenv>=1.0.1         # Charge les variables d'environnement depuis un fichier .env
+Pillow ==8.0.0
+python-docx>=1.1.2
+lxml>=5.3.0 
+
+# to make run_gui.py work
+requests
+chardet
+cryptography
