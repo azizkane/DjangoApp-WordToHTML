@@ -19,6 +19,6 @@ from word_to_html import urls as word_to_html_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(word_to_html_urls)),
+    path('api/', include(word_to_html_urls)),
 ]
 
