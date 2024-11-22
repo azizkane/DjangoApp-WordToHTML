@@ -1,9 +1,8 @@
 from django.db import models
-from django.conf import settings
-settings.MEDIA_ROOT
-class ConvertedDocument(models.Model):
+
+class Converted_Document(models.Model):
     def get_upload_path(instance, filename):
-        if filename.endswith(('.docx', '.doc')):  # Fixed tuple syntax
+        if filename.endswith(('.docx', '.doc')): 
             return f'documents_stock/{filename}'
         elif filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.tiff', '.tif')):
             return f'img_stock/{filename}'
@@ -15,3 +14,11 @@ class ConvertedDocument(models.Model):
     
     def __str__(self):
         return self.original_filename
+    
+    
+    
+    
+    class Meta:
+        verbose_name = 'Converted Document'
+        verbose_name_plural ='Converted Documents'
+    
